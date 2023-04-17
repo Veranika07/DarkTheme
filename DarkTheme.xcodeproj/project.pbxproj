@@ -13,6 +13,7 @@
 		4BB21A3629DFFA5800A9F827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB21A3429DFFA5800A9F827 /* Main.storyboard */; };
 		4BB21A3829DFFA5C00A9F827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB21A3729DFFA5C00A9F827 /* Assets.xcassets */; };
 		4BB21A3B29DFFA5C00A9F827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB21A3929DFFA5C00A9F827 /* LaunchScreen.storyboard */; };
+		4BC6508429EDAD1200452A4E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC6508329EDAD1200452A4E /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4BB21A3729DFFA5C00A9F827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BB21A3A29DFFA5C00A9F827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BB21A3C29DFFA5C00A9F827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BC6508329EDAD1200452A4E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4BB21A2D29DFFA5800A9F827 /* DarkTheme */ = {
 			isa = PBXGroup;
 			children = (
+				4BC6508229EDACCE00452A4E /* Extension */,
 				4BB21A4229DFFF6F00A9F827 /* AppDelegate */,
 				4BB21A4329E0030A00A9F827 /* Controller */,
 				4BB21A4429E0033E00A9F827 /* View */,
@@ -89,6 +92,14 @@
 				4BB21A3929DFFA5C00A9F827 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4BC6508229EDACCE00452A4E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4BC6508329EDAD1200452A4E /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				4BB21A3329DFFA5800A9F827 /* ThemeViewController.swift in Sources */,
 				4BB21A2F29DFFA5800A9F827 /* AppDelegate.swift in Sources */,
 				4BB21A3129DFFA5800A9F827 /* SceneDelegate.swift in Sources */,
+				4BC6508429EDAD1200452A4E /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

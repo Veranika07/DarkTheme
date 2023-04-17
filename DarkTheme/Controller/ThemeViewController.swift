@@ -25,6 +25,13 @@ class ThemeViewController: UIViewController {
         darkThemeIsOn(isOn: darkIsOn)
     }
     
+    @IBAction func plusButtonTapped(_ sender: Any) {
+        basicAlert(title: "Add New?", message: "Do you want to add new...?")
+    }
+    
+    @IBAction func infoButtonTapped(_ sender: Any) {
+        basicActionAlert(title: "Action Sheet is On", message: "All good here")
+    }
     func darkThemeIsOn(isOn: Bool){
         mainText = isOn ? "Dark Theme is off" : "Dark Theme is on"
         darkThemeButton.setTitle(mainText, for: .normal)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FG8-W9-iy3">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ThemeViewController" customModule="DarkTheme" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwD-pm-4rN">
-                                <rect key="frame" x="88.5" y="266.5" width="143.5" height="35"/>
+                                <rect key="frame" x="116" y="316" width="143" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="4Os-tp-7wI"/>
@@ -39,7 +39,18 @@
                             <constraint firstItem="JwD-pm-4rN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zwi-9P-8so"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fbZ-UH-hUJ"/>
+                    <navigationItem key="navigationItem" id="fbZ-UH-hUJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="NY6-Ix-1mm">
+                            <connections>
+                                <action selector="plusButtonTapped:" destination="BYZ-38-t0r" id="Nvp-8X-Lap"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Info" image="info.circle" catalog="system" id="ZZd-de-QxS">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="BYZ-38-t0r" id="amD-ZW-FuX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="darkThemeButton" destination="JwD-pm-4rN" id="qVb-6M-Wh8"/>
                     </connections>
@@ -55,7 +66,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FG8-W9-iy3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zBM-Uh-Z0o">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -69,6 +80,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
